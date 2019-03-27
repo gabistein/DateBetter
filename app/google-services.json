@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "257554370212",
+    "firebase_url": "https://datebetter-8a7e3.firebaseio.com",
+    "project_id": "datebetter-8a7e3",
+    "storage_bucket": "datebetter-8a7e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257554370212:android:ae97513c1da5b057",
+        "android_client_info": {
+          "package_name": "com.example.datebetter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257554370212-4kt0aga191h7cav471n9ohs0d983p20s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.datebetter",
+            "certificate_hash": "4ece2e152ed02292f49691b0f8654a70cd9202d3"
+          }
+        },
+        {
+          "client_id": "257554370212-r2qjc69dprth9nopjusp9sjqs56hbqjh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARjZ9Enveh3rDdfU6XvAznoJYlbjOFs7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257554370212-r2qjc69dprth9nopjusp9sjqs56hbqjh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
