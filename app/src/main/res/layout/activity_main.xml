@@ -25,7 +25,7 @@
         android:layout_gravity="center"/>
 
 
-<<<<<<< Updated upstream
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -35,7 +35,6 @@
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="406dp" />
 
-</android.support.constraint.ConstraintLayout>
-=======
+
 </LinearLayout>
->>>>>>> Stashed changes
+
