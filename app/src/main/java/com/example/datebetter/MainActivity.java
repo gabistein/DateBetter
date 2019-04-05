@@ -1,11 +1,11 @@
 package com.example.datebetter;
 
 import android.content.Intent;
-<<<<<<< Updated upstream
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-=======
+
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +27,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
->>>>>>> Stashed changes
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -85,14 +85,14 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
 
-<<<<<<< Updated upstream
+
     protected void goto_profile(View v){
         startActivity(new Intent(MainActivity.this, Profile.class));
 
 
 
     }
-=======
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -138,5 +138,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
->>>>>>> Stashed changes
 }
