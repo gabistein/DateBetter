@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="spin_style">
+        <item name="android:textColor">#ADA9B0</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
 </resources>

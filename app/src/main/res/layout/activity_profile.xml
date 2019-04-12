@@ -53,7 +53,7 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="2"
                 android:background="@drawable/bio_background"
@@ -61,7 +61,7 @@
                 android:weightSum="5">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/bio_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -72,13 +72,26 @@
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView4"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="4"
-                    android:padding="10dp"
-                    android:text="Hello, I'm Gabi!  I love oatmeal, dogs, and my pet robot." />
+                    android:addStatesFromChildren="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bio_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:padding="10dp"
+                            android:text="Hello, I'm Gabi!  I love oatmeal, dogs, and my pet robot. SCROLL SRCROLL really long profile to make scroll view do its jobbbb" />
+                    </LinearLayout>
+                </ScrollView>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -116,7 +129,7 @@
                     android:weightSum="8">
 
                     <ImageView
-                        android:id="@+id/trait1_img"
+                        android:id="@+id/ss_img"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center_vertical"
@@ -126,7 +139,7 @@
                         android:scaleType="fitCenter" />
 
                     <TextView
-                        android:id="@+id/trait1_name"
+                        android:id="@+id/ss_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -138,7 +151,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/trait1_value"
+                        android:id="@+id/ss_val"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -156,15 +169,15 @@
                     android:weightSum="8">
 
                     <ImageView
-                        android:id="@+id/trait2_img"
+                        android:id="@+id/mb_ibg"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/btn_star" />
+                        android:background="@drawable/smile" />
 
                     <TextView
-                        android:id="@+id/trait2_name"
+                        android:id="@+id/mb_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -176,7 +189,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/trait3_value"
+                        android:id="@+id/mb_val"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -194,16 +207,16 @@
                     android:weightSum="8">
 
                     <ImageView
-                        android:id="@+id/trait4_img"
+                        android:id="@+id/pet_img"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/btn_star" />
+                        android:background="@drawable/new_paw" />
 
                     <TextView
-                        android:id="@+id/trait4_name"
+                        android:id="@+id/pet_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -215,7 +228,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/trait4_value"
+                        android:id="@+id/pet_val"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -233,29 +246,29 @@
                     android:weightSum="8">
 
                     <ImageView
-                        android:id="@+id/trait5_img"
+                        android:id="@+id/drink_img"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/btn_star" />
+                        app:srcCompat="@drawable/cheers" />
 
 
                     <TextView
-                        android:id="@+id/trait5_name"
+                        android:id="@+id/drink_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
                         android:padding="5dp"
-                        android:text="Trait"
+                        android:text="Drinking"
                         android:textColor="#3923C6"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/trait5_value"
+                        android:id="@+id/drink_val"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -273,28 +286,28 @@
                     android:weightSum="8">
 
                     <ImageView
-                        android:id="@+id/trait6_img"
+                        android:id="@+id/smoke_img"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/btn_star" />
+                        android:background="@drawable/cigarette" />
 
                     <TextView
-                        android:id="@+id/trait6_name"
+                        android:id="@+id/smoke_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
                         android:padding="5dp"
-                        android:text="Trait"
+                        android:text="Smoking"
                         android:textColor="#3923C6"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/trait6_value"
+                        android:id="@+id/smoke_val"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -312,28 +325,28 @@
                     android:weightSum="8">
 
                     <ImageView
-                        android:id="@+id/trait7_img"
+                        android:id="@+id/politics_img"
                         android:layout_width="0dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:srcCompat="@android:drawable/btn_star" />
+                        app:srcCompat="@drawable/capitol" />
 
                     <TextView
-                        android:id="@+id/trait7_name"
+                        android:id="@+id/politics_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="3"
                         android:padding="5dp"
-                        android:text="Trait"
+                        android:text="Politics"
                         android:textColor="#3923C6"
                         android:textSize="14sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/trait7_value"
+                        android:id="@+id/politics_val"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -354,6 +367,7 @@
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/dark_button"
+            android:onClick="handle_edit_profile"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="Edit Profile"
